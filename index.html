@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naydu's - Personal Potfolio Website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/aa84df332c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="./assets/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer/Developer</p>
+                <h1>Hi, I am <span>Chinedum</span><br>From Nigeria.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/user.png" alt="my-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello there! I'm a self-taught web developer on a journey of continuous learning and growth. My adventure began with the basics: HTML, CSS, and JavaScript. As I delved deeper, I embraced technologies like Bootstrap for sleek designs, Node.js for server-side scripting, and React.js for dynamic user interfaces. Navigating the seas of coding, I've also harnessed the power of NPM for efficient package management and SQL for database wizardry.
+
+                        Driven by a passion for crafting digital experiences, I pour my heart and soul into every project I undertake. I believe in the power of hard work and persistence, constantly honing my skills and expanding my knowledge base. From tackling complex challenges to exploring innovative solutions, I thrive in the ever-evolving landscape of web development.
+                        
+                        With each line of code, I strive to create meaningful connections between people and technology. As I continue to embrace new technologies and push the boundaries of what's possible, I invite you to join me on this exciting journey of innovation and creativity. Together, let's build the web of tomorrow, one line of code at a time.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('technologies')">Technologies</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development Interfaces</li>
+                                <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="technologies">
+                            <ul>
+                                <li><span>FIGMA</span><br>Design prototyping for web</li>
+                                <li><span>Bootstrap</span><br>Responsive web design framework.</li>
+                                <li><span>React.js</span><br>JavaScript library for UI.</li>
+                                <li><span>Node.js</span><br>Server-side JavaScript runtime.</li>
+                                <li><span>NPM</span><br>Package management for JavaScript.</li>
+                                <li><span>SQL</span><br>Database querying and management.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design/<br>Development</h2>
+                    <p>Welcome to my web development services, 
+                        specializing in crafting dynamic and responsive websites customized to fit your unique needs. 
+                        I am dedicated to delivering top-notch solutions that elevate your online presence,
+                        whether you're a small business, entrepreneur, or large corporation. 
+                        From sleek designs to seamless functionality, I handle every aspect of the development process with precision and care.
+                        Let me bring your vision to life on the digital frontier, ensuring your website stands out in today's competitive online landscape.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Welcome to my web development services, 
+                        specializing in crafting dynamic and responsive websites customized to fit your unique needs. 
+                        I am dedicated to delivering top-notch solutions that elevate your online presence,
+                        whether you're a small business, entrepreneur, or large corporation. 
+                        From sleek designs to seamless functionality, I handle every aspect of the development process with precision and care.
+                        Let me bring your vision to life on the digital frontier, ensuring your website stands out in today's competitive online landscape.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Welcome to my UI/UX design services, where I specialize in crafting intuitive 
+                        and visually captivating user experiences. From wireframing to prototyping, 
+                        I focus on creating designs that seamlessly blend aesthetics with functionality, 
+                        ensuring an engaging journey for your users. With a keen eye for detail and 
+                        a passion for innovation, I strive to bring your vision to life while enhancing usability and
+                        satisfaction. Let's collaborate to elevate your digital presence and leave a lasting impression on your audience.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- My Portfolio Section  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/work-1.png" alt="workImage1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <a class="fa-solid fa-link"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-2.png" alt="workImage2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <a class="fa-solid fa-link"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-3.png" alt="workImage3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <a class="fa-solid fa-link"></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> naydum.dev@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +234- 703-3858-391</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="What is your Name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="16" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Naydum 2024</p>
+        </div>
+    </div>
+
+    
+
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySjywJq69li2tbkVB-cWkfMZ-mOMw2axW6nW6qR9FwbnZegvuDMCoeS5ifYKzhidfX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            }, 5000)
+            form.reset();
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
